@@ -16,6 +16,7 @@ from django.contrib.auth.decorators import login_required
 import stripe
 from django.conf import settings
 from django.views import View
+from django.contrib import messages
 
 
 def index(request):
@@ -50,11 +51,21 @@ def register(request):
         email=request.POST.get('email')
         pass1=request.POST.get('password')
         pass2=request.POST.get('confirm_password')
-        if pass1==pass2:
-               user=User.objects.create_user(name,email,pass1)
-               
-               user.save()
-               return redirect("login.html")
+      
+        if pass1!=pass2:
+            messages.warning(request,'password not same ')
+        else:
+            if User.objects.filter(username=name).exists():
+                messages.warning(request,'user already exist')
+
+            else:
+                            
+                user=User.objects.create_user(name,email,pass1)
+                user.first_name=name
+                
+                user.save()
+
+                return redirect('login')
     return render(request,'web/accounts/register.html')
 
 
