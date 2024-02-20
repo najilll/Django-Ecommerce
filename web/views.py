@@ -261,3 +261,7 @@ def electronics_detail_view(request, product_id):
 
 def error_404_view(request,exception):
     return render(request,'web/404.html')
+
+
+def wishlist(request):
+    return render(request,'web/wishlist.html')

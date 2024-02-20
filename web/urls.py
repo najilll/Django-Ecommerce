@@ -12,6 +12,7 @@ urlpatterns = [
     path("profile",views.profile,name='profile'),
     path("checkout",views.checkout,name='checkout'),
     path("order",views.Order_confirm,name='order'),
+    path("wishlist",views.wishlist,name='wishlist'),
     
 
     
