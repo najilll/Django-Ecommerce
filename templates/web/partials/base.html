@@ -149,7 +149,7 @@
             <div class="row row-cols-5">
                <div class="col">
                   <div class="tp-mobile-item text-center">
-                     <a href="shop.html" class="tp-mobile-item-btn">
+                     <a href="{% url "product" %}" class="tp-mobile-item-btn">
                         <i class="flaticon-store"></i>
                         <span>Store</span>
                      </a>
@@ -442,7 +442,7 @@
                                          New Arrivals</a>
                                    </li>
                                    <li class="has-dropdown">
-                                      <a href="shop.html" class="has-mega-menu">
+                                      <a href="{% url "product" %}" class="has-mega-menu">
                                          <span>
                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                <path d="M2.6856 4.54975C2.6856 3.52014 3.51984 2.6859 4.54945 2.68508H5.3977C5.88984 2.68508 6.36136 2.48971 6.71089 2.14348L7.30359 1.54995C8.02984 0.819578 9.21031 0.816281 9.94068 1.54253L9.9415 1.54336L9.94892 1.54995L10.5425 2.14348C10.892 2.49053 11.3635 2.68508 11.8556 2.68508H12.7031C13.7327 2.68508 14.5677 3.51932 14.5677 4.54975V5.39636C14.5677 5.88849 14.7623 6.36084 15.1093 6.71037L15.7029 7.3039C16.4332 8.03015 16.4374 9.21061 15.7111 9.94098L15.7103 9.94181L15.7029 9.94923L15.1093 10.5428C14.7623 10.8915 14.5677 11.363 14.5677 11.8551V12.7034C14.5677 13.733 13.7335 14.5672 12.7039 14.5672H12.7031H11.854C11.3619 14.5672 10.8895 14.7626 10.5408 15.1096L9.94727 15.7024C9.22185 16.4327 8.04221 16.4368 7.31183 15.7122C7.31101 15.7114 7.31019 15.7106 7.30936 15.7098L7.30194 15.7024L6.70924 15.1096C6.36054 14.7626 5.88819 14.568 5.39605 14.5672H4.54945C3.51984 14.5672 2.6856 13.733 2.6856 12.7034V11.8535C2.6856 11.3613 2.49023 10.8898 2.14318 10.5411L1.55047 9.94758C0.820097 9.22215 0.815976 8.04251 1.5414 7.31214C1.5414 7.31132 1.54223 7.31049 1.54305 7.30967L1.55047 7.30225L2.14318 6.70872C2.49023 6.35919 2.6856 5.88767 2.6856 5.39471V4.54975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -493,16 +493,16 @@
                                                <a href="#" class="mega-menu-title">Accessories</a>
                                                <ul>
                                                   <li>
-                                                   <a href="shop.html"><img src="{% static 'web/img/header/menu/menu-3.jpg'%}" alt=""></a>
+                                                   <a href="{% url "product" %}"><img src="{% static 'web/img/header/menu/menu-3.jpg'%}" alt=""></a>
                                                   </li>
                                                   <li>
-                                                     <a href="shop.html">Headphones</a>
+                                                     <a href="{% url "product" %}">Headphones</a>
                                                   </li>
                                                   <li>
-                                                     <a href="shop.html">TWS Earphone</a>
+                                                     <a href="{% url "product" %}">TWS Earphone</a>
                                                   </li>
                                                   <li>
-                                                     <a href="shop.html">Gaming Headset</a>
+                                                     <a href="{% url "product" %}">Gaming Headset</a>
                                                   </li>
                                                </ul>
                                             </li>
@@ -510,7 +510,7 @@
                                          </ul>
                                    </li>
                                    <li>
-                                      <a href="shop.html">
+                                      <a href="{% url "product" %}">
                                          <span>
                                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                <path d="M14.5 8.5V16H2.50003V8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -523,7 +523,7 @@
                                          Gifts</a>
                                    </li>
                                    <li class="has-dropdown">
-                                      <a href="shop.html">
+                                      <a href="{% url "product" %}">
                                          <span>
                                             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                <path d="M14.5 1H2.5C1.67157 1 1 1.67157 1 2.5V10C1 10.8284 1.67157 11.5 2.5 11.5H14.5C15.3284 11.5 16 10.8284 16 10V2.5C16 1.67157 15.3284 1 14.5 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -535,21 +535,21 @@
      
                                          <ul class="tp-submenu">
                                             <li class="has-dropdown">
-                                               <a href="shop.html">Desktop</a>
+                                               <a href="{% url "product" %}">Desktop</a>
                                                <ul class="tp-submenu">
-                                                  <li><a href="shop.html">Gaming</a></li>
-                                                  <li><a href="shop.html">WorkSpace</a></li>
-                                                  <li><a href="shop.html">Customize</a></li>
-                                                  <li><a href="shop.html">Luxury</a></li>
+                                                  <li><a href="{% url "product" %}">Gaming</a></li>
+                                                  <li><a href="{% url "product" %}">WorkSpace</a></li>
+                                                  <li><a href="{% url "product" %}">Customize</a></li>
+                                                  <li><a href="{% url "product" %}">Luxury</a></li>
                                                </ul>
                                             </li>
-                                            <li><a href="shop.html">Laptop</a></li>
-                                            <li><a href="shop.html">Console</a></li>
-                                            <li><a href="shop.html">Top Rated</a></li>
+                                            <li><a href="{% url "product" %}">Laptop</a></li>
+                                            <li><a href="{% url "product" %}">Console</a></li>
+                                            <li><a href="{% url "product" %}">Top Rated</a></li>
                                          </ul>
                                    </li>
                                    <li>
-                                      <a href="shop.html">
+                                      <a href="{% url "product" %}">
                                          <span>
                                             <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                <path d="M12.375 1H2.625C1.72754 1 1 1.72754 1 2.625V15.625C1 16.5225 1.72754 17.25 2.625 17.25H12.375C13.2725 17.25 14 16.5225 14 15.625V2.625C14 1.72754 13.2725 1 12.375 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -559,7 +559,7 @@
                                          Smartphones & Tablets</a>
                                    </li>
                                    <li>
-                                      <a href="shop.html">
+                                      <a href="{% url "product" %}">
                                          <span>
                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1C13.4176 1 17 4.5816 17 9C17 13.4184 13.4176 17 9 17C4.5816 17 1 13.4184 1 9C1 4.5816 4.5816 1 9 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -569,7 +569,7 @@
                                          TV, Video & Musice</a>
                                    </li>
                                    <li>
-                                      <a href="shop.html">
+                                      <a href="{% url "product" %}">
                                          <span>
                                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6292 1.26076C12.5027 1.60843 12.7699 2.81924 13.1271 3.20843C13.4843 3.59762 13.9955 3.72995 14.2783 3.72995C15.7814 3.72995 17 4.94854 17 6.45081V11.4627C17 13.4778 15.3654 15.1124 13.3503 15.1124H4.64973C2.63373 15.1124 1 13.4778 1 11.4627V6.45081C1 4.94854 2.21859 3.72995 3.72173 3.72995C4.00368 3.72995 4.51481 3.59762 4.87287 3.20843C5.23005 2.81924 5.49643 1.60843 6.36995 1.26076C7.24432 0.913081 10.7557 0.913081 11.6292 1.26076Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -580,7 +580,7 @@
                                          Cameras</a>
                                    </li>
                                    <li>
-                                      <a href="shop.html">
+                                      <a href="{% url "product" %}">
                                          <span>
                                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.30431 1C1.58423 1 1 1.59405 1 2.32534V3.10537C1 3.64706 1.20599 4.16798 1.57446 4.55981L5.61258 8.8536L5.61436 8.8509C6.39393 9.64899 6.83254 10.7279 6.83254 11.8528V15.6626C6.83254 15.9172 7.09891 16.0798 7.32 15.9597L9.61963 14.7066C9.96679 14.517 10.1834 14.1486 10.1834 13.7487V11.8428C10.1834 10.7242 10.6158 9.64989 11.3883 8.8536L15.4264 4.55981C15.794 4.16798 16 3.64706 16 3.10537V2.32534C16 1.59405 15.4167 1 14.6966 1H2.30431Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -589,7 +589,7 @@
                                          Cooking</a>
                                    </li>
                                    <li>
-                                      <a href="shop.html">
+                                      <a href="{% url "product" %}">
                                          <span>
                                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                <path d="M15.7462 7.16473V13.167C15.7462 13.6457 15.556 14.1049 15.2175 14.4434C14.8789 14.782 14.4197 14.9722 13.941 14.9722H4.3058C3.82703 14.9722 3.3679 14.782 3.02936 14.4434C2.69083 14.1049 2.50061 13.6457 2.50061 13.167V9.36255" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -600,7 +600,7 @@
                                          Accessories</a>
                                    </li>
                                    <li>
-                                      <a href="shop.html">
+                                      <a href="{% url "product" %}">
                                          <span>
                                             <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.92384 11.3525C10.1178 11.3525 12.8477 11.8365 12.8477 13.7698C12.8477 15.7032 10.136 16.201 6.92384 16.201C3.72902 16.201 1 15.7213 1 13.7871C1 11.8529 3.71084 11.3525 6.92384 11.3525Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -621,20 +621,20 @@
                                  <ul>
                                  
                                     <li  class="has-dropdown has-mega-menu">
-                                       <a href="shop.html">Shop</a>
+                                       <a href="{% url "product" %}">Shop</a>
                                        <div class="shop-mega-menu tp-submenu tp-mega-menu">
                                           <div class="row">
                                              <div class="col-lg-2">
                                                 <div class="shop-mega-menu-list">
-                                                      <a href="shop.html" class="shop-mega-menu-title">Shop Pages</a>
+                                                      <a href="{% url "product" %}" class="shop-mega-menu-title">Shop Pages</a>
                                                       <ul>
-                                                          <li><a href="shop-category.html">Grid Category</a></li>
-                                                          <li><a href="shop.html">Grid Layout</a></li>
-                                                          <li><a href="shop-list.html">List Layout</a></li>
-                                                          <li><a href="shop-masonary.html">Masonary Layout</a></li>
+                                                          <li><a href="{% url "product" %}">Grid Category</a></li>
+                                                          <li><a href="{% url "product" %}">Grid Layout</a></li>
+                                                          <li><a href="{% url "product" %}">List Layout</a></li>
+                                                          <li><a href="{% url "product" %}">Masonary Layout</a></li>
                                                           <li><a href="shop-full-width.html">Full width Layout</a></li>
                                                           <li><a href="shop-1600.html">1600px Layout</a></li>
-                                                          <li><a href="shop.html">Left Sidebar</a></li>
+                                                          <li><a href="{% url "product" %}">Left Sidebar</a></li>
                                                           <li><a href="shop-right-sidebar.html">Right Sidebar</a></li>
                                                           <li><a href="shop-no-sidebar.html">Hidden Sidebar</a></li>
                                                       </ul>
@@ -642,27 +642,27 @@
                                              </div>
                                              <div class="col-lg-2">
                                                 <div class="shop-mega-menu-list">
-                                                      <a href="shop.html" class="shop-mega-menu-title">Features</a>
+                                                      <a href="{% url "product" %}" class="shop-mega-menu-title">Features</a>
                                                       <ul>
                                                          <li><a href="shop-filter-dropdown.html">Filter Dropdown</a></li>
-                                                         <li><a href="shop-filter-offcanvas.html">Filters Offcanvas</a></li>
-                                                         <li><a href="shop.html">Filters Sidebar</a></li>
-                                                         <li><a href="shop-load-more.html">Load More button</a></li>
-                                                         <li><a href="shop-infinite-scroll.html">Infinit scrolling</a></li>
-                                                         <li><a href="shop-list.html">Collections list</a></li>
-                                                         <li><a href="shop.html">Hidden search</a></li>
-                                                         <li><a href="shop.html">Search Full screen</a></li>
+                                                         <li><a href="s{% url "product" %}">Filters Offcanvas</a></li>
+                                                         <li><a href="{% url "product" %}">Filters Sidebar</a></li>
+                                                         <li><a href="{% url "product" %}">Load More button</a></li>
+                                                         <li><a href="{% url "product" %}">Infinit scrolling</a></li>
+                                                         <li><a href="{% url "product" %}">Collections list</a></li>
+                                                         <li><a href="{% url "product" %}">Hidden search</a></li>
+                                                         <li><a href="{% url "product" %}">Search Full screen</a></li>
                                                       </ul>
                                                 </div>
                                              </div>
                                              <div class="col-lg-2">
                                                 <div class="shop-mega-menu-list">
-                                                      <a href="shop.html" class="shop-mega-menu-title">Hover Style</a>
+                                                      <a href="{% url "product" %}" class="shop-mega-menu-title">Hover Style</a>
                                                       <ul>
-                                                         <li><a href="shop.html">Hover Style 1</a></li>
-                                                         <li><a href="shop.html">Hover Style 2</a></li>
-                                                         <li><a href="shop.html">Hover Style 3</a></li>
-                                                         <li><a href="shop.html">Hover Style 4</a></li>
+                                                         <li><a href="{% url "product" %}">Hover Style 1</a></li>
+                                                         <li><a href="{% url "product" %}">Hover Style 2</a></li>
+                                                         <li><a href="{% url "product" %}">Hover Style 3</a></li>
+                                                         <li><a href="{% url "product" %}">Hover Style 4</a></li>
                                                       </ul>
                                                 </div>
                                              </div>
@@ -670,7 +670,7 @@
                                                 <div class="shop-mega-menu-img">
                                                    <img src="{% static 'web/img/menu/product/menu-product-img-1.jpg'%}" alt="">
                                                    <div class="shop-mega-menu-btn">
-                                                      <a href="shop-category.html" class="tp-menu-showcase-btn tp-menu-showcase-btn-2">Phones</a>
+                                                      <a href="{% url "product" %}" class="tp-menu-showcase-btn tp-menu-showcase-btn-2">Phones</a>
                                                    </div>
                                                 </div>
                                              </div>
@@ -678,7 +678,7 @@
                                                 <div class="shop-mega-menu-img">
                                                    <img src="{% static 'web/img/menu/product/menu-product-img-2.jpg'%}" alt="">
                                                    <div class="shop-mega-menu-btn">
-                                                      <a href="shop-category.html" class="tp-menu-showcase-btn tp-menu-showcase-btn-2">Cameras</a>
+                                                      <a href="{% url "product" %}" class="tp-menu-showcase-btn tp-menu-showcase-btn-2">Cameras</a>
                                                    </div>
                                                 </div>
                                              </div>
@@ -687,31 +687,31 @@
                                    </li>
                                     <li class="has-dropdown has-mega-menu ">
                                        
-                                       <a href="shop.html">Products</a>
+                                       <a href="{% url "product" %}">Products</a>
                                        <ul class="tp-submenu tp-mega-menu mega-menu-style-2">
                                           <!-- first col -->
                                           <li class="has-dropdown">
-                                             <a href="shop.html" class="mega-menu-title">Shop Page</a>
+                                             <a href="{% url "product" %}" class="mega-menu-title">Shop Page</a>
                                              <ul class="tp-submenu">
-                                                <li><a href="shop-category.html">Only Categories</a></li>
-                                                <li><a href="shop-filter-offcanvas.html">Shop Grid</a></li>
-                                                <li><a href="shop.html">Shop Grid with Sideber</a></li>
-                                                <li><a href="shop-list.html">Shop List</a></li>
-                                                <li><a href="shop-category.html">Categories</a></li>
-                                                <li><a href="product-details.html">Product Details</a></li>
-                                                <li><a href="product-details-progress.html">Product Details Progress</a></li>
+                                                <li><a href="{% url "product" %}">Only Categories</a></li>
+                                                <li><a href="s{% url "product" %}">Shop Grid</a></li>
+                                                <li><a href="{% url "product" %}">Shop Grid with Sideber</a></li>
+                                                <li><a href="{% url "product" %}">Shop List</a></li>
+                                                <li><a href="{% url "product" %}">Categories</a></li>
+                                                <li><a href="{% url "product" %}">Product Details</a></li>
+                                                <li><a href="{% url "product" %}">Product Details Progress</a></li>
                                              </ul>
                                           </li>
                                           <!-- third col -->
                                           <li  class="has-dropdown">
-                                             <a href="product-details.html" class="mega-menu-title">Products</a>
+                                             <a href="{% url "product" %}" class="mega-menu-title">Products</a>
                                              <ul class="tp-submenu">
                                                 
-                                                <li><a href="product-details.html">Product Simple</a></li>
-                                                <li><a href="product-details-video.html">With Video</a></li>
-                                                <li><a href="product-details-countdown.html">With Countdown Timer</a></li>
-                                                <li><a href="product-details-presentation.html">Product Presentation</a></li>
-                                                <li><a href="product-details-swatches.html">Variations Swatches</a></li>
+                                                <li><a href="{% url "product" %}">Product Simple</a></li>
+                                                <li><a href="{% url "product" %}">With Video</a></li>
+                                                <li><a href="{% url "product" %}">With Countdown Timer</a></li>
+                                                <li><a href="{% url "product" %}">Product Presentation</a></li>
+                                                <li><a href="{% url "product" %}">Variations Swatches</a></li>
                                                 <li><a href="product-details-list.html">List View</a></li>
                                                 <li><a href="product-details-gallery.html">Details Gallery</a></li>
                                                 <li><a href="product-details-slider.html">With Slider</a></li>
@@ -719,7 +719,7 @@
                                           </li>
                                           <!-- third col -->
                                           <li  class="has-dropdown">
-                                             <a href="shop.html" class="mega-menu-title">eCommerce</a>
+                                             <a href="{% url "product" %}" class="mega-menu-title">eCommerce</a>
                                              <ul class="tp-submenu">
                                                 <li><a href="{% url "cart_detail" %}">Shopping Cart</a></li>
                                                 <li><a href="order.html">Track Your Order</a></li>
@@ -732,7 +732,7 @@
 
                                           <!-- second col -->
                                           <li  class="has-dropdown">
-                                             <a href="shop.html" class="mega-menu-title">More Pages</a>
+                                             <a href="{% url "product" %}" class="mega-menu-title">More Pages</a>
                                              <ul class="tp-submenu">
                                                 
                                                
@@ -809,20 +809,20 @@
                            <ul>
                               
                               <li  class="has-dropdown has-mega-menu">
-                                 <a href="shop.html">Shop</a>
+                                 <a href="{% url "product" %}">Shop</a>
                                  <div class="shop-mega-menu tp-submenu tp-mega-menu">
                                     <div class="row">
                                        <div class="col-lg-2">
                                           <div class="shop-mega-menu-list">
-                                                <a href="shop.html" class="shop-mega-menu-title">Shop Pages</a>
+                                                <a href="{% url "product" %}" class="shop-mega-menu-title">Shop Pages</a>
                                                 <ul>
-                                                    <li><a href="shop-category.html">Grid Category</a></li>
-                                                    <li><a href="shop.html">Grid Layout</a></li>
-                                                    <li><a href="shop-list.html">List Layout</a></li>
-                                                    <li><a href="shop-masonary.html">Masonary Layout</a></li>
+                                                    <li><a href="{% url "product" %}">Grid Category</a></li>
+                                                    <li><a href="{% url "product" %}">Grid Layout</a></li>
+                                                    <li><a href="{% url "product" %}">List Layout</a></li>
+                                                    <li><a href="{% url "product" %}">Masonary Layout</a></li>
                                                     <li><a href="shop-full-width.html">Full width Layout</a></li>
                                                     <li><a href="shop-1600.html">1600px Layout</a></li>
-                                                    <li><a href="shop.html">Left Sidebar</a></li>
+                                                    <li><a href="{% url "product" %}">Left Sidebar</a></li>
                                                     <li><a href="shop-right-sidebar.html">Right Sidebar</a></li>
                                                     <li><a href="shop-no-sidebar.html">Hidden Sidebar</a></li>
                                                 </ul>
@@ -830,27 +830,27 @@
                                        </div>
                                        <div class="col-lg-2">
                                           <div class="shop-mega-menu-list">
-                                                <a href="shop.html" class="shop-mega-menu-title">Features</a>
+                                                <a href="{% url "product" %}" class="shop-mega-menu-title">Features</a>
                                                 <ul>
                                                    <li><a href="shop-filter-dropdown.html">Filter Dropdown</a></li>
-                                                   <li><a href="shop-filter-offcanvas.html">Filters Offcanvas</a></li>
-                                                   <li><a href="shop.html">Filters Sidebar</a></li>
-                                                   <li><a href="shop-load-more.html">Load More button</a></li>
-                                                   <li><a href="shop-infinite-scroll.html">Infinit scrolling</a></li>
-                                                   <li><a href="shop-list.html">Collections list</a></li>
-                                                   <li><a href="shop.html">Hidden search</a></li>
-                                                   <li><a href="shop.html">Search Full screen</a></li>
+                                                   <li><a href="s{% url "product" %}">Filters Offcanvas</a></li>
+                                                   <li><a href="{% url "product" %}">Filters Sidebar</a></li>
+                                                   <li><a href="{% url "product" %}">Load More button</a></li>
+                                                   <li><a href="{% url "product" %}">Infinit scrolling</a></li>
+                                                   <li><a href="{% url "product" %}">Collections list</a></li>
+                                                   <li><a href="{% url "product" %}">Hidden search</a></li>
+                                                   <li><a href="{% url "product" %}">Search Full screen</a></li>
                                                 </ul>
                                           </div>
                                        </div>
                                        <div class="col-lg-2">
                                           <div class="shop-mega-menu-list">
-                                                <a href="shop.html" class="shop-mega-menu-title">Hover Style</a>
+                                                <a href="{% url "product" %}" class="shop-mega-menu-title">Hover Style</a>
                                                 <ul>
-                                                   <li><a href="shop.html">Hover Style 1</a></li>
-                                                   <li><a href="shop.html">Hover Style 2</a></li>
-                                                   <li><a href="shop.html">Hover Style 3</a></li>
-                                                   <li><a href="shop.html">Hover Style 4</a></li>
+                                                   <li><a href="{% url "product" %}">Hover Style 1</a></li>
+                                                   <li><a href="{% url "product" %}">Hover Style 2</a></li>
+                                                   <li><a href="{% url "product" %}">Hover Style 3</a></li>
+                                                   <li><a href="{% url "product" %}">Hover Style 4</a></li>
                                                 </ul>
                                           </div>
                                        </div>
@@ -858,7 +858,7 @@
                                           <div class="shop-mega-menu-img">
                                              <img src="{% static 'web/img/menu/product/menu-product-img-1.jpg'%}" alt="">
                                              <div class="shop-mega-menu-btn">
-                                                <a href="shop-category.html" class="tp-menu-showcase-btn tp-menu-showcase-btn-2">Phones</a>
+                                                <a href="{% url "product" %}" class="tp-menu-showcase-btn tp-menu-showcase-btn-2">Phones</a>
                                              </div>
                                           </div>
                                        </div>
@@ -866,7 +866,7 @@
                                           <div class="shop-mega-menu-img">
                                              <img src="{% static 'web/img/menu/product/menu-product-img-2.jpg'%}" alt="">
                                              <div class="shop-mega-menu-btn">
-                                                <a href="shop-category.html" class="tp-menu-showcase-btn tp-menu-showcase-btn-2">Cameras</a>
+                                                <a href="{% url "product" %}" class="tp-menu-showcase-btn tp-menu-showcase-btn-2">Cameras</a>
                                              </div>
                                           </div>
                                        </div>
@@ -875,31 +875,31 @@
                              </li>
                               <li class="has-dropdown has-mega-menu ">
                                  
-                                 <a href="shop.html">Products</a>
+                                 <a href="{% url "product" %}">Products</a>
                                  <ul class="tp-submenu tp-mega-menu mega-menu-style-2">
                                     <!-- first col -->
                                     <li class="has-dropdown">
-                                       <a href="shop.html" class="mega-menu-title">Shop Page</a>
+                                       <a href="{% url "product" %}" class="mega-menu-title">Shop Page</a>
                                        <ul class="tp-submenu">
-                                          <li><a href="shop-category.html">Only Categories</a></li>
-                                          <li><a href="shop-filter-offcanvas.html">Shop Grid</a></li>
-                                          <li><a href="shop.html">Shop Grid with Sideber</a></li>
-                                          <li><a href="shop-list.html">Shop List</a></li>
-                                          <li><a href="shop-category.html">Categories</a></li>
-                                          <li><a href="product-details.html">Product Details</a></li>
-                                          <li><a href="product-details-progress.html">Product Details Progress</a></li>
+                                          <li><a href="{% url "product" %}">Only Categories</a></li>
+                                          <li><a href="s{% url "product" %}">Shop Grid</a></li>
+                                          <li><a href="{% url "product" %}">Shop Grid with Sideber</a></li>
+                                          <li><a href="{% url "product" %}">Shop List</a></li>
+                                          <li><a href="{% url "product" %}">Categories</a></li>
+                                          <li><a href="{% url "product" %}">Product Details</a></li>
+                                          <li><a href="{% url "product" %}">Product Details Progress</a></li>
                                        </ul>
                                     </li>
                                     <!-- third col -->
                                     <li  class="has-dropdown">
-                                       <a href="product-details.html" class="mega-menu-title">Products</a>
+                                       <a href="{% url "product" %}" class="mega-menu-title">Products</a>
                                        <ul class="tp-submenu">
                                           
-                                          <li><a href="product-details.html">Product Simple</a></li>
-                                          <li><a href="product-details-video.html">With Video</a></li>
-                                          <li><a href="product-details-countdown.html">With Countdown Timer</a></li>
-                                          <li><a href="product-details-presentation.html">Product Presentation</a></li>
-                                          <li><a href="product-details-swatches.html">Variations Swatches</a></li>
+                                          <li><a href="{% url "product" %}">Product Simple</a></li>
+                                          <li><a href="{% url "product" %}">With Video</a></li>
+                                          <li><a href="{% url "product" %}">With Countdown Timer</a></li>
+                                          <li><a href="{% url "product" %}">Product Presentation</a></li>
+                                          <li><a href="{% url "product" %}">Variations Swatches</a></li>
                                           <li><a href="product-details-list.html">List View</a></li>
                                           <li><a href="product-details-gallery.html">Details Gallery</a></li>
                                           <li><a href="product-details-slider.html">With Slider</a></li>
@@ -907,7 +907,7 @@
                                     </li>
                                     <!-- third col -->
                                     <li  class="has-dropdown">
-                                       <a href="shop.html" class="mega-menu-title">eCommerce</a>
+                                       <a href="{% url "product" %}" class="mega-menu-title">eCommerce</a>
                                        <ul class="tp-submenu">
                                           <li><a href="cart.html">Shopping Cart</a></li>
                                           <li><a href="order.html">Track Your Order</a></li>
@@ -920,7 +920,7 @@
 
                                     <!-- second col -->
                                     <li  class="has-dropdown">
-                                       <a href="shop.html" class="mega-menu-title">More Pages</a>
+                                       <a href="{% url "product" %}" class="mega-menu-title">More Pages</a>
                                        <ul class="tp-submenu">
                                           
                                          

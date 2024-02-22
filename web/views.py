@@ -40,7 +40,8 @@ def login1(request):
             login(request,user)
             return redirect('index')
         else:
-            return redirect('register.html')
+            messages.warning(request,'invalid details')
+            return redirect('login.html')
 
     return render(request,'web/accounts/login.html')
 
@@ -238,6 +239,17 @@ class CreateStripeCheckoutSessionView(View):
 
 def confirmation(request):
     return render(request,'web/confirmation.html')
+
+
+
+def product(request):
+    context={
+        'produ':Product.objects.all(),
+        
+        'gadgets':Electronics.objects.all(),
+        
+    }
+    return render(request,'web/product.html',context)
 
 
 

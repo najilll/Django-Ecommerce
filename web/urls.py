@@ -35,7 +35,8 @@ urlpatterns = [
 
      path('confirmation',views.confirmation,name='confirmation'),
      path('products/<int:product_id>/',views.product_detail_view, name='product_detail'),
-     path('electronics/<int:product_id>/',views.electronics_detail_view, name='electronics_detail')
+     path('electronics/<int:product_id>/',views.electronics_detail_view, name='electronics_detail'),
+     path('product',views.product,name='product'),
      
 
 
