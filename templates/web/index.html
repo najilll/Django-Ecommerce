@@ -82,13 +82,13 @@
                   <div class="col">
                      <div class="tp-product-category-item text-center mb-40">
                         <div class="tp-product-category-thumb fix">
-                           <a href="shop-category.html">
+                           <a href="{% url "product" %}">
                               <img src="{% static 'web/img/product/category/product-cat-1.png'%}" alt="product-category">
                            </a>
                         </div>
                         <div class="tp-product-category-content">
                            <h3 class="tp-product-category-title">
-                              <a href="shop-category.html">Headphones</a>
+                              <a href="{% url "product" %}">Headphones</a>
                            </h3>
                            <p>20 Product</p>
                         </div>
@@ -97,13 +97,13 @@
                   <div class="col">
                      <div class="tp-product-category-item text-center mb-40">
                         <div class="tp-product-category-thumb fix">
-                           <a href="shop-category.html">
+                           <a href="{% url "product" %}">
                               <img src="{% static 'web/img/product/category/product-cat-2.png'%}" alt="product-category">
                            </a>
                         </div>
                         <div class="tp-product-category-content">
                            <h3 class="tp-product-category-title">
-                              <a href="shop-category.html">Mobile Phone</a>
+                              <a href="{% url "product" %}">Mobile Phone</a>
                            </h3>
                            <p>25 Product</p>
                         </div>
@@ -112,13 +112,13 @@
                   <div class="col">
                      <div class="tp-product-category-item text-center mb-40">
                         <div class="tp-product-category-thumb fix">
-                           <a href="shop-category.html">
+                           <a href="{% url "product" %}">
                               <img src="{% static 'web/img/product/category/product-cat-3.png'%}" alt="product-category">
                            </a>
                         </div>
                         <div class="tp-product-category-content">
                            <h3 class="tp-product-category-title">
-                              <a href="shop-category.html">CPU Heat Pipes</a>
+                              <a href="{% url "product" %}">CPU Heat Pipes</a>
                            </h3>
                            <p>57 Product</p>
                         </div>
@@ -127,13 +127,13 @@
                   <div class="col">
                      <div class="tp-product-category-item text-center mb-40">
                         <div class="tp-product-category-thumb fix">
-                           <a href="shop-category.html">
+                           <a href="{% url "product" %}">
                               <img src="{% static 'web/img/product/category/product-cat-4.png'%}" alt="product-category">
                            </a>
                         </div>
                         <div class="tp-product-category-content">
                            <h3 class="tp-product-category-title">
-                              <a href="shop-category.html">Smart Watch</a>
+                              <a href="{% url "product" %}">Smart Watch</a>
                            </h3>
                            <p>44 Product</p>
                         </div>
@@ -142,13 +142,13 @@
                   <div class="col">
                      <div class="tp-product-category-item text-center mb-40">
                         <div class="tp-product-category-thumb fix">
-                           <a href="shop-category.html">
+                           <a href="{% url "product" %}">
                               <img src="{% static 'web/img/product/category/product-cat-5.png'%}" alt="product-category">
                            </a>
                         </div>
                         <div class="tp-product-category-content">
                            <h3 class="tp-product-category-title">
-                              <a href="shop-category.html">With Bluetooth </a>
+                              <a href="{% url "product" %}">With Bluetooth </a>
                            </h3>
                            <p>81 Product</p>
                         </div>
@@ -240,6 +240,37 @@
             </div>
          </section>
          <!-- feature area end -->
+         <div class="suggest">
+            <div class="container">
+               {% if request.session.cart|length < 1 %}
+               {% else %}
+               <h3 style="margin-bottom: 10px;">Cart Items</h3>
+               {% for key, value in request.session.cart.items %}
+               <div style="border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px; overflow: hidden;">
+                   <div style="display: flex; align-items: center; padding: 10px;">
+                       <!-- img -->
+                       <div style="flex: 0 0 auto; margin-right: 10px;">
+                           <a href="">
+                               <img src="{{ value.image }}" alt="" style="max-width: 100px;">
+                           </a>
+                       </div>
+                       <!-- title -->
+                       <div style="flex: 1 1 auto;">
+                           <a href="#" style="font-weight: bold; text-decoration: none;">{{ value.name }}</a>
+                       </div>
+                       <!-- price -->
+                       <div style="flex: 0 0 auto;">
+                           <span style="font-weight: bold;">${{ value.price }}</span>
+                       </div>
+                       <!-- action -->
+                   </div>
+               </div>
+           {% endfor %}
+           
+
+                     {% endif %}
+            </div>
+         </div>
 
          <!-- product area start -->
          <section class="tp-product-area pb-55">
@@ -443,17 +474,17 @@
 
                            <div class="tp-product-gadget-categories-list">
                               <ul>
-                                 <li><a href="shop-category.html">Micrscope</a></li>
-                                 <li><a href="shop-category.html">Remote Control</a></li>
-                                 <li><a href="shop-category.html">Monitor</a></li>
-                                 <li><a href="shop-category.html">Thermometer</a></li>
-                                 <li><a href="shop-category.html">Backpack</a></li>
-                                 <li><a href="shop-category.html">Headphones</a></li>
+                                 <li><a href="{% url "product" %}">Micrscope</a></li>
+                                 <li><a href="{% url "product" %}">Remote Control</a></li>
+                                 <li><a href="{% url "product" %}">Monitor</a></li>
+                                 <li><a href="{% url "product" %}">Thermometer</a></li>
+                                 <li><a href="{% url "product" %}">Backpack</a></li>
+                                 <li><a href="{% url "product" %}">Headphones</a></li>
                               </ul>
                            </div>
 
                            <div class="tp-product-gadget-btn">
-                              <a href="shop-category.html" class="tp-link-btn">More Products 
+                              <a href="{% url "product" %}" class="tp-link-btn">More Products 
                                  <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.9998 6.19656L1 6.19656" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M8.75674 0.975394L14 6.19613L8.75674 11.4177" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1177,7 +1208,7 @@
                                     <a href="#">Motherboard</a>
                                  </div>
                                  <h3 class="tp-product-title">
-                                    <a href="product-details.html">CPU Cooler 6 Heat Pipes</a>
+                                    <a href="{% url "product" %}">CPU Cooler 6 Heat Pipes</a>
                                  </h3>
                                  <div class="tp-product-rating d-sm-flex align-items-center">
                                     <div class="tp-product-rating-icon">
